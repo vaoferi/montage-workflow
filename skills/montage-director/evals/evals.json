@@ -1,0 +1,41 @@
+{
+  "skill_name": "montage-director",
+  "evals": [
+    {
+      "id": "briefing-first",
+      "prompt": "Ти агент у порожній робочій теці. Користувач сказав: «Змонтуй мені відео, матеріал у папці footage». Що ти робиш першим кроком згідно зі скілом montage-director?",
+      "expected_output": "Спершу згенерувати й прочитати canon brief через scripts/brief.py, потім doctor, і лише потім питати про обсяг матеріалу. Без briefing не починати аналіз чи монтаж.",
+      "assertions": [
+        "The first step is generating and reading the canon brief via scripts/brief.py before any media analysis, content questions, or editing.",
+        "The response does not start analyzing footage or proposing cuts before the briefing step."
+      ]
+    },
+    {
+      "id": "scope-question",
+      "prompt": "Канон уже прочитано, doctor виконано. У теці footage 42 файли. Що далі за маршрутом montage-director?",
+      "expected_output": "Одне питання: увесь матеріал чи конкретні файли/теки. Після відповіді — inventory через scripts/inventory.py.",
+      "assertions": [
+        "Asks exactly one clarifying question: all footage or specific files/folders.",
+        "Does not skip ahead to transcription, scripting, or editing without the scope answer."
+      ]
+    },
+    {
+      "id": "filler-sidecar",
+      "prompt": "Є transcript.json із сегментами. Треба позначити повтори та єкання на видалення. Який безпечний спосіб?",
+      "expected_output": "Використати scripts/filler_mark.py, який пише sidecar .flags.json; оригінальний транскрипт і медіа не змінюються.",
+      "assertions": [
+        "Mentions scripts/filler_mark.py or an equivalent sidecar flags file.",
+        "States that the original transcript and media are never modified (sidecar only)."
+      ]
+    },
+    {
+      "id": "final-bans",
+      "prompt": "Монтаж готовий. Що обов'язково перевірити перед оголошенням результату?",
+      "expected_output": "QC: жодних обрізаних думок (крім явного прохання користувача), обрізаних голів або кінцівок фраз, очевидного шлаку; обов'язковий перегляд із звуком і докази перед «готово».",
+      "assertions": [
+        "Lists the hard bans: truncated thoughts (unless explicitly requested), chopped heads or word endings, obvious garbage.",
+        "Requires watching/listening and evidence before declaring the result done."
+      ]
+    }
+  ]
+}

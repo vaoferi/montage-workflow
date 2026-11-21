@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Flag repeats and filler words in a transcript. Writes sidecar, never mutates input.
 
 Input: whisper-style JSON {"segments": [{"id", "start", "end", "text"}, ...]}

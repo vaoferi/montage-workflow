@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Media inventory via ffprobe. Python 3.9+, stdlib only."""
 import argparse
 import json

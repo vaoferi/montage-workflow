@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Environment doctor: tools, transcriber, installed editors. Python 3.9+, stdlib only."""
 import argparse
 import importlib.util
