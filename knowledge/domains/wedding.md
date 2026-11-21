@@ -22,6 +22,8 @@ establishing/location → bride preparation → groom preparation → family pre
 
 Vows, слова пастора/ведучого, промови, природний діалог батьків і наречених, сміх і реакції. Найсильніші sound bites стають основою narrative spine.
 
+Speech fidelity для vows/speeches обов'язкова: AI-процес не може непомітно змінювати фактичні слова — `canon/process/agent-discipline.md`.
+
 ## Доменні акценти застосування динаміки (матеріал №2)
 
 - Fake second camera (wide → cut → tighter) — для vows, speeches, pastor/officiant, reactions, наречених.

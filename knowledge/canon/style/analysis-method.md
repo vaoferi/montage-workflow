@@ -79,4 +79,4 @@ Narrative skeleton складається з GREEN + PURPLE + YELLOW.
 
 Схема: AI analysis → markers + metadata + SELECTS timeline → AI rough cut → людське рев'ю → AI revision → color/audio → final QC.
 
-Агент не фіналізує монтаж без людського гейта.
+Агент не фіналізує монтаж без людського гейта. Повний перелік гейтів і evidence-вимог — `canon/process/agent-discipline.md`.
