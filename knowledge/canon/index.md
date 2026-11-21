@@ -18,6 +18,7 @@
 | qc | `qc/qc-protocol.md` | Повний перегляд у реальному часі, сигнали проблем, два проходи | active |
 | tools | `tools/resolve-21.md` | Можливості Resolve 21/21.1, колірний порядок | active (перевіряти probe()) |
 | tools | `tools/audio-models.md` | Довідка моделей/сервісів відновлення аудіо: ClearerVoice, Adobe, DeepFilterNet, SepFormer, Resemble, ElevenLabs, Auphonic | active (version-sensitive) |
+| tools | `tools/skill-repos.md` | Реєстр зовнішніх Agent Skills (9 репо, перевірено 2026-11-21) + політика автооновлення перед застосуванням | active |
 
 Поза каноном:
 
