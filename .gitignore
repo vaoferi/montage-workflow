@@ -1,0 +1,15 @@
+.DS_Store
+._*
+*.tmp.*
+machine.yaml
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Медіа проєктів ніколи не комітиться — лише метадані
+projects/*/material/
+projects/*/proxies/
+projects/*/renders/
+projects/*/deliverables/
