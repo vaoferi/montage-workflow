@@ -47,6 +47,14 @@ ln -s "$(pwd)/skills/montage-director" ~/.qoder/skills/montage-director
 
 Канон шукається за `MONTAGE_WORKFLOW_ROOT` → предками поточної теки → `knowledge/canon/index.md`.
 
+### Зовнішні скіли
+
+```bash
+python3 scripts/skills_sync.py   # clone/оновлення 9 офіційних репо → ~/.qoder/skill-pool + lock SHA
+```
+
+Реєстр — `skills/external/registry.json`, provenance — `skills/external/lock.json`. До агента підключаються точково потрібні скіли, не всі одразу.
+
 ## Вимоги
 
 - Python 3.9+ (скрипти скіла — stdlib)

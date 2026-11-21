@@ -36,6 +36,19 @@ Creator Skills (story-craft, storyboarding) + Vyral (viral-hooks) + video-editin
 
 Перший реальний тест: Herk Edit Kit + Creator Skills + ffmpeg-skill — перевірити якість сюжету, доречність картинок, коректність субтитрів, відсутність обірваних думок.
 
+## Синхронізація (автооновлення)
+
+Усі репо з реєстру (`skills/external/registry.json`) синхронізуються в локальний пул `~/.qoder/skill-pool`:
+
+```bash
+python3 scripts/skills_sync.py                  # усі репо: clone або shallow-оновлення
+python3 scripts/skills_sync.py --only owner/name  # точкове оновлення
+```
+
+- Кожен синк записує точний commit SHA у `skills/external/lock.json` (provenance; файл комітиться).
+- Перед використанням скіла в роботі — обов'язковий синк (політика вище).
+- До агента підключаються **точково** потрібні скіли (симлінк у `~/.qoder/skills/`), а не всі одразу: 50+ описів у контексті шкодять якості.
+
 ## Встановлення (приклад для OpenCode)
 
 ```

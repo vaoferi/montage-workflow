@@ -1,0 +1,13 @@
+{
+  "repos": [
+    {"name": "nateherkai/herk-edit-kit", "url": "https://github.com/nateherkai/herk-edit-kit.git"},
+    {"name": "novincode/creator-skills", "url": "https://github.com/novincode/creator-skills.git"},
+    {"name": "vyralcontent/content-skills", "url": "https://github.com/vyralcontent/content-skills.git"},
+    {"name": "social-media-skills/video-editing-skill", "url": "https://github.com/social-media-skills/video-editing-skill.git"},
+    {"name": "kajisho5/ffmpeg-skill", "url": "https://github.com/kajisho5/ffmpeg-skill.git"},
+    {"name": "remotion-dev/skills", "url": "https://github.com/remotion-dev/skills.git"},
+    {"name": "Benitoow/cinema-skills", "url": "https://github.com/Benitoow/cinema-skills.git"},
+    {"name": "leynos/visual-storytelling-skills", "url": "https://github.com/leynos/visual-storytelling-skills.git"},
+    {"name": "mattpocock/skills", "url": "https://github.com/mattpocock/skills.git"}
+  ]
+}

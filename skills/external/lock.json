@@ -1,0 +1,58 @@
+{
+  "repos": [
+    {
+      "name": "nateherkai/herk-edit-kit",
+      "url": "https://github.com/nateherkai/herk-edit-kit.git",
+      "sha": "10511e5af86fc47756ea89803b397422e2d89284",
+      "path": "/Users/vaoferi/.qoder/skill-pool/nateherkai__herk-edit-kit"
+    },
+    {
+      "name": "novincode/creator-skills",
+      "url": "https://github.com/novincode/creator-skills.git",
+      "sha": "c98c3332d8f4bd616a94607d363506ae428079da",
+      "path": "/Users/vaoferi/.qoder/skill-pool/novincode__creator-skills"
+    },
+    {
+      "name": "vyralcontent/content-skills",
+      "url": "https://github.com/vyralcontent/content-skills.git",
+      "sha": "349e495d97029a3e6303a7510e3f39c73f36d8fe",
+      "path": "/Users/vaoferi/.qoder/skill-pool/vyralcontent__content-skills"
+    },
+    {
+      "name": "social-media-skills/video-editing-skill",
+      "url": "https://github.com/social-media-skills/video-editing-skill.git",
+      "sha": "f94d0517d717de281ee23569094aac616d32f4ef",
+      "path": "/Users/vaoferi/.qoder/skill-pool/social-media-skills__video-editing-skill"
+    },
+    {
+      "name": "kajisho5/ffmpeg-skill",
+      "url": "https://github.com/kajisho5/ffmpeg-skill.git",
+      "sha": "8c85417f94bd066ffc549d3b0c1e382c212f006c",
+      "path": "/Users/vaoferi/.qoder/skill-pool/kajisho5__ffmpeg-skill"
+    },
+    {
+      "name": "remotion-dev/skills",
+      "url": "https://github.com/remotion-dev/skills.git",
+      "sha": "6f55706d1069e512430582ad86e4e57dc07afe1b",
+      "path": "/Users/vaoferi/.qoder/skill-pool/remotion-dev__skills"
+    },
+    {
+      "name": "Benitoow/cinema-skills",
+      "url": "https://github.com/Benitoow/cinema-skills.git",
+      "sha": "b3d96caaf90729f086ce8bfa96654f40fd98e4e5",
+      "path": "/Users/vaoferi/.qoder/skill-pool/Benitoow__cinema-skills"
+    },
+    {
+      "name": "leynos/visual-storytelling-skills",
+      "url": "https://github.com/leynos/visual-storytelling-skills.git",
+      "sha": "ff5635118bdf3e16795159136e18eb4f8152628c",
+      "path": "/Users/vaoferi/.qoder/skill-pool/leynos__visual-storytelling-skills"
+    },
+    {
+      "name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills.git",
+      "sha": "abeeaf95660ba9e8b7c753eb38f441ca707a8823",
+      "path": "/Users/vaoferi/.qoder/skill-pool/mattpocock__skills"
+    }
+  ]
+}
