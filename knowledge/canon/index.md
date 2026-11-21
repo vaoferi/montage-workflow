@@ -9,6 +9,7 @@
 | style | `style/editing-grammar.md` | Правила монтажної граматики: виправдання кадру, пріоритети, тримання, повтори, рух камери, continuity, story first, salvage | active |
 | style | `style/analysis-method.md` | Ієрархічний трипрохідний аналіз матеріалу, технічні флаги, дублікати, класифікація, маркери, безпека автоматизації | active |
 | style | `style/controlled-dynamics.md` | Контрольована динаміка: push-in/pull-out, stabilize→recreate, fake second camera, match movement, cut on motion, speed, мікродинаміка, драбина рятунку | active |
+| style | `style/shot-composition.md` | Композиція кадру (золота середина): м'яка політика відбору + жорсткий стандарт виконання, три питання перед crop, subject/edges/face-safety, rescue-процедура, фінальний QC | active |
 | process | `process/agent-discipline.md` | Дисципліна агента: 80/20, root cause, native-first, мінімальна зміна, оригінали незмінні, зворотність, provenance, людські гейти, speech fidelity, джерела правди | active |
 | process | `process/verification.md` | Done = evidence: рівні доказів під ризик, test before batch, media-TDD, об'єктивні інваріанти vs суб'єктивні судження, звітність | active |
 | process | `process/governance-review.md` | Аудит інструкцій агента: 14 перевірок, мінімальні виправлення, звіт | active |
