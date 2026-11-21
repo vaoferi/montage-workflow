@@ -17,3 +17,7 @@
 ## Speech fidelity
 
 Для реальних висловлювань жоден AI-процес не може непомітно змінювати фактичні слова. Enhancement ≠ дозвіл вигадувати мову; розбіжність transcripts → `MANUAL_REVIEW`. Повне правило — `canon/process/agent-discipline.md`.
+
+## Відновлення проблемного звуку
+
+Практичний пайплайн (torture test, target speaker extraction, separation, enhancement, transcript consensus) — `canon/audio/restoration-pipeline.md`. Довідка інструментів і моделей — `canon/tools/audio-models.md`.

@@ -1,5 +1,20 @@
 # CHANGELOG канону
 
+## 2026-11-21 — матеріал №5
+
+Джерело: `knowledge/inbox/2026-11-21-audio-restoration-advisory.md` (отримано 2026-11-21).
+
+Додано:
+
+- `audio/restoration-pipeline.md` — метод відновлення звуку: комбінація target speaker extraction → separation → enhancement; обов'язковий torture test (30–60 с, матриця кандидатів, 1 хв × N замість усього матеріалу × N); порядок інструментів; pipeline-приклад AV TSE → SR 48k → cleanup → EQ/compression; перевірка кандидатів (speakers, слова, pumping/metallic); transcript consensus (`POSSIBLE_AI_SPEECH_ARTIFACT`, `MANUAL_REVIEW`); report-таблиця; обмеження.
+- `tools/audio-models.md` — version-sensitive довідка: ClearerVoice (SE 48K, SS 16K, AV TSE 16K, SR 48K), Adobe Enhance Speech v2 (ліміти free), DeepFilterNet, SpeechBrain SepFormer-WHAM, Resemble Enhance, ElevenLabs Voice Isolator, Auphonic.
+
+Оновлено: `audio/audio-priority.md` — cross-ref на пайплайн; `knowledge/domains/wedding.md` — пріоритет рятування голосів нареченої/нареченого/ведучого.
+
+Ключове правило матеріалу збережено: краще трохи гірший звук із реальною фразою, ніж ідеальний AI-голос, що сказав те, чого людина не казала.
+
+Конфлікти: немає. Superseded: немає.
+
 ## 2026-11-21 — матеріал №4 (два підходи → золота середина)
 
 Джерела: `knowledge/inbox/2026-11-21-shot-composition-soft.md` (м'якший підхід: rescue-first, 40 правил) і `knowledge/inbox/2026-11-21-shot-composition-strict.md` (жорсткіший: кожен кадр навмисно скомпонований, 38 правил). Вказівка власника: «підбери мудро золоту середину».

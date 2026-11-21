@@ -24,6 +24,8 @@ Vows, слова пастора/ведучого, промови, природн
 
 Speech fidelity для vows/speeches обов'язкова: AI-процес не може непомітно змінювати фактичні слова — `canon/process/agent-discipline.md`.
 
+Audio rescue: пріоритет — голоси нареченої, нареченого, пастора/ведучого через AV target speaker extraction (обличчя/губи у кадрі) — `canon/audio/restoration-pipeline.md`.
+
 ## Доменні акценти застосування динаміки (матеріал №2)
 
 - Fake second camera (wide → cut → tighter) — для vows, speeches, pastor/officiant, reactions, наречених.

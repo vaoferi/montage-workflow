@@ -14,8 +14,10 @@
 | process | `process/verification.md` | Done = evidence: рівні доказів під ризик, test before batch, media-TDD, об'єктивні інваріанти vs суб'єктивні судження, звітність | active |
 | process | `process/governance-review.md` | Аудит інструкцій агента: 14 перевірок, мінімальні виправлення, звіт | active |
 | audio | `audio/audio-priority.md` | Пріоритет звуку, ducking, збереження природних звуків | active |
+| audio | `audio/restoration-pipeline.md` | Torture test, target speaker extraction → separation → enhancement, transcript consensus, report, обмеження | active |
 | qc | `qc/qc-protocol.md` | Повний перегляд у реальному часі, сигнали проблем, два проходи | active |
 | tools | `tools/resolve-21.md` | Можливості Resolve 21/21.1, колірний порядок | active (перевіряти probe()) |
+| tools | `tools/audio-models.md` | Довідка моделей/сервісів відновлення аудіо: ClearerVoice, Adobe, DeepFilterNet, SepFormer, Resemble, ElevenLabs, Auphonic | active (version-sensitive) |
 
 Поза каноном:
 
