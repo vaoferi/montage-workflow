@@ -8,7 +8,9 @@
 
 - **IntelliSearch**: пошук за visual content, transcript і metadata окремо; обличчя; повертає релевантний сегмент усередині довгого кліпу.
 - **Транскрипція**; у Studio AI-операції IntelliSearch і transcription доступні через scripting API.
-- **Стабілізація**: smoothing, strength, crop, Camera Lock. Не застосовувати сліпо до всього матеріалу.
+- **Стабілізація**: smoothing, strength, crop, Camera Lock — контролюються окремо; не застосовувати сліпо до всього матеріалу, можна прибрати лише погане тремтіння, не роблячи кадр «бетонним».
+- **Transform keyframes** — ручний контрольований рух через Position/Scale; **Dynamic Zoom** — м'який push-in/pull-out для статичного матеріалу.
+- **Speed Warp** з режимом Better — якісніший retiming; застосовувати вибірково й перевіряти кадри після інтерполяції (руки, волосся, тканини, люди, що перетинаються, конфеті, швидкі танці).
 - **Shot Match**: матчинг камер за кольором, контрастом, яскравістю.
 - **Fairlight**: cleanup, Voice Isolation, automatic ducking музики під діалог.
 - **AI UltraSharpen**: незначно soft / out-of-focus матеріал — rescue, не воскресіння.

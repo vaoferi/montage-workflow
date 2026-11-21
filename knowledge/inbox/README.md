@@ -13,3 +13,4 @@
 | # | Отримано | Файл | Що це | Дистильовано в |
 |---|----------|------|-------|----------------|
 | 1 | 2026-11-21 | `2026-09-18-wedding-editorial-advisory.md` | Порада для ШІ-агента щодо монтажу весільного фільму: редакторська конституція, 13 етапів, класифікація фрагментів, маркери, pacing, continuity, salvage, QC, факти про Resolve 21.1 | `canon/style/`, `canon/audio/`, `canon/qc/`, `canon/tools/`, домен — `domains/wedding.md` |
+| 2 | 2026-11-21 | `2026-11-21-controlled-dynamics-advisory.md` | Контрольована динаміка в постобробці: push-in/pull-out, stabilize→recreate, fake second camera, match movement, cut on motion, speed, мікродинаміка, драбина рятунку | `canon/style/controlled-dynamics.md`, `canon/tools/resolve-21.md`, домен — `domains/wedding.md` |

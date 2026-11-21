@@ -1,5 +1,21 @@
 # CHANGELOG канону
 
+## 2026-11-21 — матеріал №2
+
+Джерело: `knowledge/inbox/2026-11-21-controlled-dynamics-advisory.md` (отримано 2026-11-21 у чаті).
+
+Додано:
+
+- `style/controlled-dynamics.md` — принцип «перезнімання в постобробці»: digital push-in/pull-out, pan/reframe, stabilize→recreate, recomposition, fake second camera, motion continuity, match movement, cut on motion, керування швидкістю, мікродинаміка, фотографії, глибина, контраст ритму, заборона переобробки, практична драбина рятунку, вірність фінальному відео. Записано універсально, без доменної прив'язки.
+
+Оновлено:
+
+- `style/editing-grammar.md` — salvage посилається на повну драбину рятунку.
+- `tools/resolve-21.md` — Transform keyframes, Dynamic Zoom, Speed Warp (режим Better), окремі контролі стабілізації.
+- `knowledge/domains/wedding.md` — доменні акценти застосування прийомів.
+
+Конфлікти: немає. Superseded: немає.
+
 ## 2026-11-21 — коригування №1: універсалізація
 
 Вказівка власника: канон записується як універсальний, без орієнтації на весільний домен.

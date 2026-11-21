@@ -1,6 +1,6 @@
 # Доменний інстанс: весільний фільм (wedding highlight)
 
-Джерело: матеріал №1 (`knowledge/inbox/2026-09-18-wedding-editorial-advisory.md`), отримано 2026-11-21. Статус: active.
+Джерела: матеріали №1–2 (`knowledge/inbox/`), отримано 2026-11-21. Статус: active.
 
 **Це не дефолт канону.** Універсальні правила — у `knowledge/canon/`; цей файл лише конкретизує їх для одного домену. Майбутні домени додаються поруч як окремі файли.
 
@@ -21,6 +21,13 @@ establishing/location → bride preparation → groom preparation → family pre
 ## Ключові джерела історії
 
 Vows, слова пастора/ведучого, промови, природний діалог батьків і наречених, сміх і реакції. Найсильніші sound bites стають основою narrative spine.
+
+## Доменні акценти застосування динаміки (матеріал №2)
+
+- Fake second camera (wide → cut → tighter) — для vows, speeches, pastor/officiant, reactions, наречених.
+- Digital push-in — на емоційних фразах і реакціях (наречений дивиться на наречену).
+- Match movement — поворот нареченої → dance spin; рух тканини сукні → рух кадру в тому ж напрямку.
+- Digital pan із ціллю — flowers → bride, rings → hands, parent → bride.
 
 ## Мапінг етапів матеріалу на пайплайн
 
