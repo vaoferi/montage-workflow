@@ -30,6 +30,9 @@
 | `leynos/visual-storytelling-skills` | планування кадрів, візуальна послідовність, сталість персонажів | public, малий repo | AI-сцени (опційно) |
 | `mattpocock/skills` | інженерні скіли для агентів, «Straight from my .agents directory» | public, ~330k★ | інженерна дисципліна; доповнює `process/` |
 
+## Додаткові адаптери web showcase (2026-11-24)
+Окремий домен: `knowledge/domains/web-project-showcase.md`. Вибір, реальні обмеження та candidate SHA: `web-showcase-tools.md`. Stageshow, demo-video-skills, chrome-capture, Subtle — optional entries у registry, синхронізувати лише через `--only` за потреби, не встановлювати глобально.
+
 ## Рекомендований стартовий стек
 
 Creator Skills (story-craft, storyboarding) + Vyral (viral-hooks) + video-editing-skill + ffmpeg-skill + remotion-dev/skills + mattpocock/skills.
