@@ -33,8 +33,16 @@ def sync_repo(entry, pool_dir):
     url = entry["url"]
     target = Path(pool_dir) / repo_dir_name(name)
     if target.exists():
-        run_git(["fetch", "--depth", "1", "origin"], cwd=target)
-        run_git(["reset", "--hard", "FETCH_HEAD"], cwd=target)
+        if target.is_symlink() or not (target / ".git").is_dir():
+            raise ValueError("Pool target is not a managed clone: " + name)
+        actual = run_git(["remote", "get-url", "origin"], cwd=target).stdout.strip()
+        if actual != url:
+            raise ValueError("Pool origin mismatch: " + name)
+        if run_git(["status", "--porcelain", "--untracked-files=all"], cwd=target).stdout.strip():
+            raise ValueError("Dirty pool checkout; preserve local changes: " + name)
+        run_git(["fetch", "--depth", "1", "origin", "HEAD"], cwd=target)
+        # Preserve any local branch instead of reset --hard. Review fetched SHA before executing.
+        run_git(["checkout", "--detach", "FETCH_HEAD"], cwd=target)
     else:
         target.parent.mkdir(parents=True, exist_ok=True)
         subprocess.run(
@@ -52,10 +60,18 @@ def sync_all(registry_path, pool_dir, lock_path, only=None):
     repos = registry.get("repos", [])
     if only:
         wanted = set(only)
+        unknown = wanted - {r["name"] for r in repos}
+        if unknown:
+            raise ValueError("Unknown registry entries: " + ", ".join(sorted(unknown)))
         repos = [r for r in repos if r["name"] in wanted]
+    else:
+        repos = [r for r in repos if not r.get("optional", False)]
     results = [sync_repo(entry, pool_dir) for entry in repos]
-    lock = {"repos": results}
     lock_path = Path(lock_path)
+    previous = json.loads(lock_path.read_text(encoding="utf-8")) if lock_path.exists() else {"repos": []}
+    merged = {r["name"]: r for r in previous.get("repos", [])}
+    merged.update({r["name"]: r for r in results})
+    lock = {"repos": list(merged.values())}
     lock_path.parent.mkdir(parents=True, exist_ok=True)
     lock_path.write_text(
         json.dumps(lock, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
@@ -75,7 +91,7 @@ def main():
     only = [n.strip() for n in args.only.split(",")] if args.only else None
     try:
         lock = sync_all(args.registry, args.pool, args.lock, only=only)
-    except (OSError, subprocess.CalledProcessError, json.JSONDecodeError) as exc:
+    except (OSError, subprocess.CalledProcessError, ValueError) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 1
 

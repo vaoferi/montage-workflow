@@ -1,6 +1,6 @@
 # Канон — індекс (універсальний)
 
-Оновлено: 2026-11-21. Джерела надходять у `knowledge/inbox/`; історія змін — `CHANGELOG.md`.
+Оновлено: 2026-11-24. Джерела надходять у `knowledge/inbox/`; історія змін — `CHANGELOG.md`.
 
 Канон містить **універсальні** правила, застосовні до будь-якого відеомонтажу. Доменні конкретизації живуть окремо в `knowledge/domains/` і ніколи не замінюють канон.
 
@@ -20,8 +20,10 @@
 | tools | `tools/audio-models.md` | Довідка моделей/сервісів відновлення аудіо: ClearerVoice, Adobe, DeepFilterNet, SepFormer, Resemble, ElevenLabs, Auphonic | active (version-sensitive) |
 | tools | `tools/skill-repos.md` | Реєстр зовнішніх Agent Skills (9 репо, перевірено 2026-11-21) + політика автооновлення перед застосуванням | active |
 
+| tools | `tools/web-showcase-tools.md` | Вибір інструментів для real capture, Stageshow, Remotion, weekly case study; не інсталювати все | active (web showcase only) |
+
 Поза каноном:
 
-- `knowledge/domains/` — доменні інстанси (приклади конкретизації універсальних правил для типу продукту). Зараз: `wedding.md`.
+- `knowledge/domains/` — доменні інстанси (приклади конкретизації універсальних правил для типу продукту). Зараз: `wedding.md`, `web-project-showcase.md`.
 
 Ще немає матеріалу: `platform/` (специфікації платформ), `delivery/` (матриця експорту, неймінг).

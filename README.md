@@ -2,7 +2,7 @@
 
 Універсальний воркфлоу монтажу відео для ШІ-агентів: портативний, кросплатформний, з єдиним каноном знань і скілом-оркестратором.
 
-Приватний репозиторій. Ініціалізується клонуванням на будь-якому ПК (macOS, Linux, Windows); агент читає канон і веде повний маршрут — від сирої теки з матеріалом до переглянутого результату в редакторі.
+Репозиторій інструкцій. Робочі матеріали та приватні клієнтські докази не публікуються. Ініціалізується клонуванням на будь-якому ПК (macOS, Linux, Windows); агент читає канон і веде повний маршрут — від сирої теки з матеріалом до переглянутого результату в редакторі.
 
 ## Як це працює
 
@@ -50,10 +50,18 @@ ln -s "$(pwd)/skills/montage-director" ~/.qoder/skills/montage-director
 ### Зовнішні скіли
 
 ```bash
-python3 scripts/skills_sync.py   # clone/оновлення 9 офіційних репо → ~/.qoder/skill-pool + lock SHA
+python3 scripts/skills_sync.py   # clone/оновлення вибраних офіційних репо → ~/.qoder/skill-pool + lock SHA
 ```
 
 Реєстр — `skills/external/registry.json`, provenance — `skills/external/lock.json`. До агента підключаються точково потрібні скіли, не всі одразу.
+
+## Web showcase: звіт про сайт за тиждень
+
+Виклик з агентом, який працює над сайтом: `$montage-director web-showcase` або природною мовою «Зроби три відео про зміни сайту за останні сім днів».
+
+Спільний evidence pack → (1) React Stageshow teaser, (2) справжній функціональний запис браузера, (3) before/after case study. Кожен у 16:9 та 9:16, без зміни production. Домен: [web-project-showcase](knowledge/domains/web-project-showcase.md). Інструменти: [web-showcase-tools](knowledge/canon/tools/web-showcase-tools.md).
+
+Готовий [універсальний промпт](workflow/web-showcase-prompt.md) + проектний заголовок із [шаблонів](workflow/web-showcase-headers.md). Для Git-хронології: `python scripts/web_release_evidence.py --repo <project> --start <ISO-offset> --end <ISO-offset>` (кінець виключний; Git не доводить deployment).
 
 ## Вимоги
 
