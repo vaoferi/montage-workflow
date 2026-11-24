@@ -1,6 +1,6 @@
 ---
 name: montage-director
-description: "Використовуй, коли треба змонтувати відео з матеріалу в будь-якій теці — оркестратор монтажу для ШІ-агентів: інвентаризація, безкоштовна транскрипція, маркування повторів і єкань, опитування, сценарій, монтаж, відкриття в редакторі (DaVinci Resolve, Premiere, Final Cut, FilmCraft) і QC без обрізаних думок, голів і кінцівок."
+description: "Використовуй для монтажу відео, презентацій сайтів, product demo, before/after і тижневих відеозвітів, або коли треба змонтувати відео з матеріалу в будь-якій теці — оркестратор монтажу для ШІ-агентів: інвентаризація, безкоштовна транскрипція, маркування повторів і єкань, опитування, сценарій, монтаж, відкриття в редакторі (DaVinci Resolve, Premiere, Final Cut, FilmCraft) і QC без обрізаних думок, голів і кінцівок."
 tools: [Bash, Read, Write, Edit, Glob, Grep, Env]
 allowed-tools: Bash, Read, Write, Edit, Glob, Grep, Env
 ---
@@ -16,7 +16,7 @@ allowed-tools: Bash, Read, Write, Edit, Glob, Grep, Env
 Перший крок кожної робочої сесії — **до будь-яких рішень, питань чи аналізу**:
 
 1. Визнач корінь канону: змінна `MONTAGE_WORKFLOW_ROOT`; поточна тека або її предки з `knowledge/canon/index.md`; якщо немає — скажи користувачу клонувати `vaoferi/montage-workflow`.
-2. Згенеруй бриф: `python3 scripts/brief.py --out <робоча тека>/montage-brief.md` і **прочитай його повністю** — це весь канон в одному файлі.
+2. Згенеруй бриф: `python3 <root>/skills/montage-director/scripts/brief.py --root <root> --out <робоча тека>/montage-brief.md` і **прочитай його повністю** — це весь канон в одному файлі.
 3. Далі відкривай окремі файли канону за потребою етапу. Доменні інстанси (`knowledge/domains/`) застосовуй лише коли домен збігається.
 
 Робота без briefing заборонена: без згенерованого й прочитаного brief не починай аналіз, поради чи монтаж.
@@ -28,6 +28,9 @@ allowed-tools: Bash, Read, Write, Edit, Glob, Grep, Env
 - **Test before batch**: будь-який processing спочатку на малому фрагменті, потім масштабування.
 - **Не питай про те, що можна з'ясувати сам**: читай метадані, файли, транскрипти, логи.
 - **Системні пакети — лише з дозволу**; pip-інструменти з безкоштовних джерел став автоматично, коли потрібні.
+
+## Domain dispatch (after mandatory briefing)
+If request concerns a website/product demo, weekly development report, portfolio case, or before/after, select `web-showcase` (in Codex: `$montage-director web-showcase`, or implicit natural-language trigger). Read `knowledge/domains/web-project-showcase.md` and `knowledge/canon/tools/web-showcase-tools.md`. Use that route instead of the raw-footage stages below: build evidence first, three separate films, shared capture, horizontal + vertical exports, private review candidates. Do not ask redundant scope/interview questions when the brief already answers them; silent UI needs no transcriber. Never publish or perform live transactions as part of video creation. Canonical evidence/QC/approval rules still apply. For normal raw-media editing continue below.
 
 ## Instructions (Маршрут)
 
