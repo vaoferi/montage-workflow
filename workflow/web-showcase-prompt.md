@@ -1,0 +1,13 @@
+# Reusable agent prompt — website weekly showcase
+
+You are the coding agent that worked on this website. Execute a private review package, not just a plan. First read the current project instructions and the latest canonical VAOFERI montage-workflow (repo vaoferi/montage-workflow). Use $montage-director web-showcase if discoverable, otherwise explicitly read skills/montage-director/SKILL.md, generate its canon brief with the correct absolute script/root, and read knowledge/domains/web-project-showcase.md. Follow the web showcase route; no redundant interview for supplied details. Owner has delegated draft story and editing choices; final publication and audio approval remain separate.
+
+Target site and emphasis are in the short project header appended below. Compare the last seven calendar days including today, Kyiv timezone, unless header overrides. Find actual baseline/current states and verify which changes are deployed vs local. Never touch production, reset branch, overwrite originals, submit real orders/bug reports or expose personal data. Use local SSD for previews/render; save deliverables outside tracked website repo.
+
+Make three distinct videos from one shared evidence pack:
+1. Stageshow React/plain CSS marketing teaser (12–20s, 3–5 beats, genuine UI look, clearly illustrative).
+2. Real functional screen recording (45–90s): actual navigation, clicks, readable labels and outcome. No mocked success. Isolated authorized test data only; if live, stop before irreversible submission and label it.
+3. Before/after weekly case study (45–75s): dated evidence, 2–4 verified changes, customer benefit, brief CTA. If no authentic baseline, explicitly show current state and verified changes instead.
+Each in 16:9 + 9:16 H.264 MP4, separately framed; six MP4s total. Ukrainian on-screen text, English copy/SRT for reuse, clean source and covers if feasible. Silent-first, no unapproved music/voice, no posting. Use real UI for 02 and 03, don't alter framework for 01. Native first; fetch/check only selected official upstreams and review them, no global installations. Use parallel workers for independent exports after evidence lock, coordinate shared files. No extra NAS load.
+
+Deliver actual playable files, evidence.json, shots.md, claims.md, source/timeline, caption copy, QC report and concise client report. Verify full playback, phone legibility, codec, resolution, redactions, actual outcomes. Report exact paths, SHAs, verified/unverified claims and BLOCKED variants; don't claim a video exists without rendering it. Start immediately with evidence collection, not a long plan.
