@@ -1,0 +1,4 @@
+# Project header — mind.nlm.help
+Website: https://mind.nlm.help
+Audience: existing stakeholders and potential software/design clients; ensure authorization to show internal UI and redact sensitive data, avoid exposing private routes or actual reports.
+Focus: last-seven-day visual/design changes and actual bug-report workflow. Confirm supported fields and route from the current project: open report entry point → enter synthetic title/description → choose actual options (severity/category/screenshots only if present) → review → submit only in authorized isolated test environment → show real resulting state if verified. Otherwise stop at draft/review and label not submitted. No real production report, notifications, attachments with private data, credentials, or personal identifiers. Compare authentic historical and current UI; show practical benefit without unsupported claims. CTA: clearer feedback and easier reporting; developer contact only if approved.
